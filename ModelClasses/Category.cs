@@ -21,7 +21,7 @@ namespace ModelClasses
         // Define que el texto máximo permitido para 'Name' es de 30 caracteres.
         // Si se supera ese límite, se muestra el mensaje de error definido.
         // Esto evita errores de longitud en la base de datos y mejora la validación del lado del servidor.
-        [StringLength(30, ErrorMessage = "No se pueden escribir más de 30")]
+        [StringLength(12, ErrorMessage = "No se pueden escribir más de 12")]
         public string Name { get; set; }
 
     }

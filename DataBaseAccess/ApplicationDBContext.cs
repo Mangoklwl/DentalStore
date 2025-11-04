@@ -20,6 +20,7 @@ namespace DataBaseAccess
         // Esto permite que el contexto se configure desde Program.cs mediante inyección de dependencias.
         public ApplicationDBContext(DbContextOptions options) : base(options)
         {
+            
         }
 
         // DbSet representa una tabla dentro de la base de datos.
