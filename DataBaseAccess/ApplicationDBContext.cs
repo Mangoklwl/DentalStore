@@ -18,9 +18,9 @@ namespace DataBaseAccess
         // Recibe las opciones de configuración (como la cadena de conexión o el proveedor de base de datos)
         // y las pasa al constructor de la clase base (IdentityDbContext).
         // Esto permite que el contexto se configure desde Program.cs mediante inyección de dependencias.
-        public ApplicationDBContext(DbContextOptions options) : base(options)
+        public ApplicationDBContext(DbContextOptions<ApplicationDBContext> options) : base(options)
         {
-            
+             
         }
 
         // DbSet representa una tabla dentro de la base de datos.
